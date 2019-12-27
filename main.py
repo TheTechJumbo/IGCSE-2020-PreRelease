@@ -73,6 +73,15 @@ while repeatPurchase=="yes":
 		print("•"+str(descriptions[cases[item]]))
 		print("•"+str(descriptions[chargers[item]]))
 		currentPrice=prices[devices[item]]+prices[contracts[item]]+prices[cases[item]]+prices[chargers[item]]
+	noOfDevices+=1
 	totalPrice+=currentPrice
 	print()
 	print("The total cost of your basket is £"+str(totalPrice))
+
+#Task 2
+	repeatPurchase="a"
+	if repeatPurchase != 'yes' and 'no':
+		repeatPurchase=input("Would you like to buy any additional devices? Answer with 'yes' or no': ")
+	if repeatPurchase == 'no':
+		print("The total cost of your basket is £"+str(totalPrice))
+
